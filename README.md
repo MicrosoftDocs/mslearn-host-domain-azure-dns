@@ -1,11 +1,11 @@
 ---
 page_type: sample
 languages:
-- csharp
+- azurecli
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- azure-load-balancer
+description: "Set up a virtual network with two virtual machines and a load balancer."
+urlFragment: "https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns"
 ---
 
 # Official Microsoft Sample
@@ -18,20 +18,35 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-Give a short description for your sample here. What does it do and why is it important?
+Set up a load balancer to use in learn module exercise for "Host your domain on Azure DNS". Script creates:
+- Virtual network for the VMs
+- Network security group
+- Two network interfaces
+- Availability set
+- Two virtual machines from a template
+- Public IP address
+- Load balancer
+- Load balancer probe
+- Load balancer rule
+
+The script also:
+- Updates the two network interfaces to associate them with the load balancer.
+- Displays the IP address for the load balancer.
+
 
 ## Contents
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
+
 
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
+| `.gitignore`      | Define what to ignore at commit time     |
+| `CODE_Of_CONDUCT.md` | Microsoft Open Source Code of Conduct |
+| `LICENSE`         | The license for the sample               |
 | `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
+| `SECURITY.md`       | Security statement for Microsoft-owned repositories                         |
+|`cloud-init.txt`             |Cloud-init script to configure the virtual machines     |
+|`setup.sh`             | Script to set up and deploy a load balancer in Azure CLI                        |
 
 ## Prerequisites
 
@@ -43,7 +58,7 @@ Explain how to prepare the sample once the user clones or downloads the reposito
 
 ## Runnning the sample
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+See Microsoft Learn module 
 
 ## Key concepts
 
