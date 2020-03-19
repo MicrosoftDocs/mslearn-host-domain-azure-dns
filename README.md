@@ -50,19 +50,21 @@ The script also:
 
 ## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+The script is intended to be run from a BASH prompt in Azure Cloud Shell.
 
 ## Setup
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+At the start of the Microsoft Learn module exercise, run `bash src/setup.sh` to build the load balancer, virtual machines, and virtual network.
 
-## Runnning the sample
+## Running the sample
 
-See Microsoft Learn module 
+To run the set-up script, run the following commands in Azure Cloud Shell:
 
-## Key concepts
-
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+  ```bash
+  cd mslearn-host-domain-azure-dns  
+  chmod +x setup.sh  
+  ./setup.sh
+  ```
 
 ## Contributing
 
