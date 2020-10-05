@@ -103,7 +103,8 @@ echo '--------------------------------------------------------'
       --frontend-port 80 \
       --backend-port 80 \
       --frontend-ip-name myFrontEndPool \
-      --backend-pool-name myBackEndPool
+      --backend-pool-name myBackEndPool \
+      --probe-name myHealthProbe
 
   az network nic ip-config update \
       --resource-group $RgName \
