@@ -57,7 +57,7 @@ for i in `seq 1 2`; do
         --name webVM$i \
         --nics webNic$i \
         --location $Location \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --availability-set portalAvailabilitySet \
         --generate-ssh-keys \
         --custom-data cloud-init.txt
